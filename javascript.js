@@ -59,7 +59,9 @@ function cambiarColor(){
 }
 
 function alinearLeft(){
-	alert("Dont touch me yet!");
+	var comentario= document.getElementById("articulo").value;
+    var loQueSea = comentario;
+    document.getElementById("aquiQueda").innerHTML = loQueSea;
 }
 
 function alinearCenter(){
