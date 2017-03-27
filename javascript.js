@@ -21,7 +21,7 @@ function increaseFontSize() {
          var s = parseInt(p[i].style.fontSize.replace("px",""));
       } else {
 
-         var s = 30;
+         var s = 15;
       }
       if(s!=max) {
 

@@ -15,11 +15,18 @@
  	 <font color="black" face="helvetica" size=3 align=left>
  	 <h2>Artículos</h2></br>
  	 </font>
- 	 <font color="red" face="monospace" size=4 align=left>
-	 <p>Hola mundo!!!</p>
-	 </font>
+ 	 <script type="text/javascript">
+            window.setInterval (BlinkIt, 500);
+            var color = "red";
+            function BlinkIt () {
+            var blink = document.getElementById ("blink");
+            color = (color == "#ffffff ")? "red" : "#ffffff ";
+            blink.style.color = color;
+            blink.style.fontSize='18px';}
+            </script>
+            <div id="blink" align="left"> ¡Hola Mundo!</div>
 	 <hr style="width: 100%; color: black; height: 1px; background-color:grey;"/>
-	 <font color="red" face="monospace" size=3 align=left>
+	 <font color="red" face="monospace" size=10 align=left>
 	 <h5 style="color: yellow; background-color: #6f90b8"> JAJAJAJA Esta página qué!?? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ex arcu, varius eget tristique in, vestibulum non leo. Cras et vestibulum est.</h5>
 	 </font>
 	 <p id="aquiQueda"></p>
@@ -31,11 +38,11 @@
 	<form name="botones">
 	 	<button type="button" class="btn btn-primary btn-sm" onclick="increaseFontSize();">Texto grande</button>
 		<button type="button" class="btn btn-primary btn-sm" onclick="mediumFontSize();">Texto mediano</button> 
-		<button type="submit" class="btn btn-primary btn-sm" onclick="decreaseFontSize();">Texto chico</button>
-		<button type="submit" class="btn btn-primary btn-sm" onclick="cambiarColor();">Color de texto</button> 
-		<button type="submit" class="btn btn-primary btn-sm" onclick="alinearLeft();">Alinear a la izquierda</button>
-		<button type="submit" class="btn btn-primary btn-sm" onclick="alinearCenter();">Centrar</button>
-		<button type="submit" class="btn btn-primary btn-sm" onclick="alinearRight();">Alinear a la derecha"></button></br>
+		<button type="button" class="btn btn-primary btn-sm" onclick="decreaseFontSize();">Texto chico</button>
+		<button type="button" class="btn btn-primary btn-sm" onclick="cambiarColor();">Color de texto</button> 
+		<button type="button" class="btn btn-primary btn-sm" onclick="alinearLeft();">Alinear a la izquierda</button>
+		<button type="button" class="btn btn-primary btn-sm" onclick="alinearCenter();">Centrar</button>
+		<button type="button" class="btn btn-primary btn-sm" onclick="alinearRight();">Alinear a la derecha"></button></br>
 	    <td><textarea rows=5 cols=120 class="btn-sm" name="comentarios" id="articulo" onkeypress="escribir();"></textarea></td>
     <script type="text/javascript" src="javascript.js" ></script>
     <font color="black" face="helvetica" size=3 align=left>
