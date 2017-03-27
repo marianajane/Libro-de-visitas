@@ -53,7 +53,7 @@ function decreaseFontSize() {
 }
 
 function mediumFontSize(){
-	var comentario = document.getElementsById('aqui');
+	var comentario = document.getElementById('aqui');
 	comentario.style.fontSize = "20px"
 }
 
